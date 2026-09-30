@@ -3,7 +3,7 @@
   "category": "Soporte y mantenimiento",
   "tag": "Repotenciación",
   "desc": "El upgrade con mejor relación costo-beneficio para tu equipo.",
-  "image": "assets/img/servicios/ssd y ram.webp",
+  "image": "/assets/img/servicios/ssd-ram.webp",
   "published": true,
   "order": 90
 }
