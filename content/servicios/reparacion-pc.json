@@ -1,0 +1,9 @@
+{
+  "title": "Reparación de computadores",
+  "category": "Soporte y mantenimiento",
+  "tag": "Reparación",
+  "desc": "Portátiles y equipos de escritorio, de cualquier marca.",
+  "image": "assets/img/servicios/reparacion.webp",
+  "published": true,
+  "order": 50
+}

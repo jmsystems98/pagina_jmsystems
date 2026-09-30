@@ -1,0 +1,9 @@
+{
+  "title": "Venta de computadores y componentes",
+  "category": "Venta y asesoría",
+  "tag": "Venta de equipos",
+  "desc": "Equipos nuevos y repotenciados, con garantía.",
+  "image": "assets/img/servicios/venta_pc.webp",
+  "published": true,
+  "order": 180
+}

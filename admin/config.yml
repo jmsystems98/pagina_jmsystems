@@ -1,21 +1,104 @@
-# ⚠️ CAMBIA "TU_USUARIO/TU_REPOSITORIO" por el tuyo, ej: juanperez/jmsystems-web
 backend:
   name: github
   repo: jmsystems98/pagina_jmsystems
-  branch: main
+  branch: main   # si tu rama se llama "master", cámbialo aquí
 
 locale: es
 site_url: https://jmsystemscolombia.netlify.app
 display_url: https://jmsystemscolombia.netlify.app
 
-media_folder: assets/img/productos
+media_folder: /assets/img/productos
 public_folder: /assets/img/productos
 
 collections:
+  # ---------------- PÁGINA PRINCIPAL Y CONTACTO ----------------
+  - name: sitio
+    label: Página principal y contacto
+    media_folder: /assets/img
+    public_folder: /assets/img
+    files:
+      - label: Banner, logo y contacto
+        name: sitio
+        file: content/sitio.json
+        format: json
+        fields:
+          - { label: Logo, name: logo, widget: image, required: false, choose_url: false }
+          - label: Banner de portada (hero)
+            name: hero
+            widget: object
+            fields:
+              - { label: Texto pequeño superior, name: eyebrow, widget: string, required: false }
+              - { label: Título línea 1, name: title1, widget: string, required: false }
+              - { label: Título línea 2 (en color), name: title2, widget: string, required: false }
+              - { label: Descripción, name: lede, widget: text, required: false }
+              - { label: Imagen del banner, name: image, widget: image, required: false, choose_url: false }
+              - { label: Texto de la insignia, name: badge, widget: string, required: false }
+          - { label: Mapa de cobertura (imagen), name: coverage_map, widget: image, required: false, choose_url: false }
+          - label: Contacto y redes
+            name: contact
+            widget: object
+            fields:
+              - { label: WhatsApp (solo números con indicativo), name: whatsapp, widget: string, hint: "Ej: 573105996075" }
+              - { label: WhatsApp (como se muestra), name: whatsappDisplay, widget: string, hint: "Ej: +57 310 599 6075" }
+              - { label: Ciudad, name: city, widget: string }
+              - { label: Zona de cobertura, name: coverage, widget: string }
+              - { label: Link de Facebook, name: facebook, widget: string }
+              - { label: Nombre en Facebook, name: facebookHandle, widget: string }
+              - { label: Link de Instagram, name: instagram, widget: string }
+              - { label: Usuario de Instagram, name: instagramHandle, widget: string }
+              - { label: Correo (opcional), name: email, widget: string, required: false }
+
+  # ---------------- SERVICIOS ----------------
+  - name: servicios
+    label: Servicios
+    label_singular: Servicio
+    folder: content/servicios
+    media_folder: /assets/img/servicios
+    public_folder: /assets/img/servicios
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    summary: "{{title}} ({{category}})"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - label: Categoría
+        name: category
+        widget: select
+        options: ["Soporte y mantenimiento", "Redes y conectividad", "Seguridad electrónica", "Venta y asesoría"]
+      - { label: Etiqueta (sobre la imagen), name: tag, widget: string, required: false }
+      - { label: Descripción, name: desc, widget: text }
+      - { label: Imagen, name: image, widget: image, required: false, choose_url: false }
+      - { label: Publicado, name: published, widget: boolean, default: true }
+      - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero" }
+
+  # ---------------- CATEGORÍAS DEL CATÁLOGO ----------------
+  - name: categorias
+    label: Categorías del catálogo
+    label_singular: Categoría
+    folder: content/categorias
+    media_folder: /assets/img/productos
+    public_folder: /assets/img/productos
+    create: true
+    extension: json
+    format: json
+    slug: "{{slug}}"
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: Nombre de la categoría, name: title, widget: string }
+      - { label: Subtítulo, name: subtitle, widget: string, required: false }
+      - { label: Imagen de portada, name: image, widget: image, required: false, choose_url: false }
+      - { label: Publicada, name: published, widget: boolean, default: true }
+      - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero" }
+
+  # ---------------- PRODUCTOS ----------------
   - name: productos
     label: Productos
     label_singular: Producto
     folder: content/productos
+    media_folder: /assets/img/productos
+    public_folder: /assets/img/productos
     create: true
     extension: json
     format: json
@@ -26,21 +109,11 @@ collections:
       - { label: Nombre del producto, name: name, widget: string }
       - label: Categoría
         name: category
-        widget: select
-        options:
-          - { label: Computadores, value: computadores }
-          - { label: Mouse, value: mouse }
-          - { label: Teclados, value: teclados }
-          - { label: Combos teclado + mouse, value: combos }
-          - { label: Cargadores para portátil, value: cargadores-portatil }
-          - { label: Cargadores y power banks, value: cargadores-celular }
-          - { label: Audífonos y manos libres, value: audio }
-          - { label: Parlantes y cámaras web, value: video-audio-pc }
-          - { label: Almacenamiento, value: almacenamiento }
-          - { label: Cables y adaptadores, value: cables-adaptadores }
-          - { label: Redes inalámbricas, value: redes-inalambricas }
-          - { label: Soportes y protección, value: soportes-proteccion }
-          - { label: Accesorios para celular, value: accesorios-celular }
+        widget: relation
+        collection: categorias
+        search_fields: ["title"]
+        value_field: "{{slug}}"
+        display_fields: ["title"]
       - { label: Precio, name: price, widget: string, default: "Consultar", hint: 'Escríbelo como "$45.000" o deja "Consultar"' }
       - { label: Nota (opcional), name: note, widget: string, required: false, hint: "Texto corto bajo el nombre, ej: Incluye garantía" }
       - { label: Imagen de referencia, name: image, widget: image, required: false, choose_url: false }

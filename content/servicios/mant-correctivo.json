@@ -1,0 +1,9 @@
+{
+  "title": "Mantenimiento correctivo",
+  "category": "Soporte y mantenimiento",
+  "tag": "Mantenimiento",
+  "desc": "Diagnóstico y reparación de fallas puntuales en tu equipo.",
+  "image": "assets/img/servicios/mant_correctivo.webp",
+  "published": true,
+  "order": 40
+}

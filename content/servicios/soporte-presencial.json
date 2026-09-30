@@ -1,0 +1,9 @@
+{
+  "title": "Soporte técnico presencial",
+  "category": "Soporte y mantenimiento",
+  "tag": "Soporte",
+  "desc": "Vamos hasta tu casa u oficina a diagnosticar y resolver la falla.",
+  "image": "assets/img/servicios/tecnico.webp",
+  "published": true,
+  "order": 10
+}

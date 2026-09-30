@@ -1,0 +1,9 @@
+{
+  "title": "Configuración de impresoras",
+  "category": "Soporte y mantenimiento",
+  "tag": "Impresoras",
+  "desc": "Instalación, conexión en red y solución de errores de impresión.",
+  "image": "assets/img/servicios/impresora.webp",
+  "published": true,
+  "order": 100
+}

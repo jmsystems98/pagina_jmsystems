@@ -1,0 +1,9 @@
+{
+  "title": "Venta de accesorios tecnológicos",
+  "category": "Venta y asesoría",
+  "tag": "Venta de accesorios",
+  "desc": "Todo lo que necesitas para tu equipo, en un solo lugar.",
+  "image": "assets/img/servicios/venta_acce.webp",
+  "published": true,
+  "order": 190
+}

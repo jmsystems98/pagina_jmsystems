@@ -1,0 +1,9 @@
+{
+  "title": "Instalación y actualización de software",
+  "category": "Soporte y mantenimiento",
+  "tag": "Software",
+  "desc": "Programas, controladores y actualizaciones al día.",
+  "image": "assets/img/servicios/software.webp",
+  "published": true,
+  "order": 80
+}

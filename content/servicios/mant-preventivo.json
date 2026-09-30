@@ -1,0 +1,9 @@
+{
+  "title": "Mantenimiento preventivo",
+  "category": "Soporte y mantenimiento",
+  "tag": "Mantenimiento",
+  "desc": "Limpieza interna, revisión de temperaturas y optimización general.",
+  "image": "assets/img/servicios/mantenimiento.webp",
+  "published": true,
+  "order": 30
+}
