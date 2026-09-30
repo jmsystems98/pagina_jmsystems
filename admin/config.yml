@@ -1,0 +1,48 @@
+# ⚠️ CAMBIA "TU_USUARIO/TU_REPOSITORIO" por el tuyo, ej: juanperez/jmsystems-web
+backend:
+  name: github
+  repo: jmsystems98/pagina_jmsystems
+  branch: main
+
+locale: es
+site_url: https://jmsystemscolombia.netlify.app
+display_url: https://jmsystemscolombia.netlify.app
+
+media_folder: assets/img/productos
+public_folder: /assets/img/productos
+
+collections:
+  - name: productos
+    label: Productos
+    label_singular: Producto
+    folder: content/productos
+    create: true
+    extension: json
+    format: json
+    slug: "{{fields.category}}-{{slug}}"
+    summary: "{{name}} — {{price}}"
+    sortable_fields: ["name", "category", "price"]
+    fields:
+      - { label: Nombre del producto, name: name, widget: string }
+      - label: Categoría
+        name: category
+        widget: select
+        options:
+          - { label: Computadores, value: computadores }
+          - { label: Mouse, value: mouse }
+          - { label: Teclados, value: teclados }
+          - { label: Combos teclado + mouse, value: combos }
+          - { label: Cargadores para portátil, value: cargadores-portatil }
+          - { label: Cargadores y power banks, value: cargadores-celular }
+          - { label: Audífonos y manos libres, value: audio }
+          - { label: Parlantes y cámaras web, value: video-audio-pc }
+          - { label: Almacenamiento, value: almacenamiento }
+          - { label: Cables y adaptadores, value: cables-adaptadores }
+          - { label: Redes inalámbricas, value: redes-inalambricas }
+          - { label: Soportes y protección, value: soportes-proteccion }
+          - { label: Accesorios para celular, value: accesorios-celular }
+      - { label: Precio, name: price, widget: string, default: "Consultar", hint: 'Escríbelo como "$45.000" o deja "Consultar"' }
+      - { label: Nota (opcional), name: note, widget: string, required: false, hint: "Texto corto bajo el nombre, ej: Incluye garantía" }
+      - { label: Imagen de referencia, name: image, widget: image, required: false, choose_url: false }
+      - { label: Publicado, name: published, widget: boolean, default: true, hint: "Desactívalo para ocultar el producto (ej: agotado) sin borrarlo" }
+      - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero. Déjalo en 100 para que salga al final" }
