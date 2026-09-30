@@ -1,5 +1,5 @@
 {
-  "logo": "assets/img/logo.png",
+  "logo": "/assets/img/tecnico-onsite.jpg",
   "hero": {
     "eyebrow": "Servicio técnico · Valle de Aburrá y Oriente antioqueño",
     "title1": "Soporte confiable,",
@@ -10,12 +10,12 @@
   },
   "coverage_map": "assets/img/coverage-map.png",
   "contact": {
-    "whatsapp": "573105996075",
-    "whatsappDisplay": "+57 310 599 6075",
-    "city": "Medellín, Antioquia",
-    "coverage": "Medellín, Valle de Aburrá y Oriente antioqueño",
     "facebook": "https://www.facebook.com/share/18ufyz7g6R/",
+    "coverage": "Medellín, Valle de Aburrá y Oriente antioqueño",
+    "city": "Medellín, Antioquia",
     "facebookHandle": "JMSYSTEMS",
+    "whatsappDisplay": "+57 310 599 6075",
+    "whatsapp": "573105996075",
     "instagram": "https://instagram.com/jmsystems1998",
     "instagramHandle": "@jmsystems1998",
     "email": ""
