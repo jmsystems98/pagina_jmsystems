@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jmsystemscolombia.netlify.app/sitemap.xml
