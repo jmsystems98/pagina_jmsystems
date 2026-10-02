@@ -116,6 +116,13 @@ collections:
         display_fields: ["title"]
       - { label: Precio, name: price, widget: string, default: "Consultar", hint: 'Escríbelo como "$45.000" o deja "Consultar"' }
       - { label: Nota (opcional), name: note, widget: string, required: false, hint: "Texto corto bajo el nombre, ej: Incluye garantía" }
-      - { label: Imagen de referencia, name: image, widget: image, required: false, choose_url: false }
+      - { label: Imagen principal, name: image, widget: image, required: false, choose_url: false }
+      - label: Más imágenes (galería)
+        name: gallery
+        widget: list
+        required: false
+        max: 6
+        hint: "Agrega aquí las demás fotos (hasta 6). Con la principal, el cliente verá todas en el catálogo."
+        field: { label: Imagen, name: image, widget: image, choose_url: false }
       - { label: Publicado, name: published, widget: boolean, default: true, hint: "Desactívalo para ocultar el producto (ej: agotado) sin borrarlo" }
       - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero. Déjalo en 100 para que salga al final" }

@@ -36,7 +36,8 @@ const catMap = Object.fromEntries(categories.map((c) => [c.id, c]));
 
 readDir("productos").sort(byOrder).forEach((p) => {
   if (!p.name || !catMap[p.category]) return;
-  catMap[p.category].products.push({ name: p.name, price: p.price || "Consultar", note: p.note || "", image: p.image || "" });
+  catMap[p.category].products.push({ name: p.name, price: p.price || "Consultar", note: p.note || "", image: p.image || "",
+    gallery: (Array.isArray(p.gallery) ? p.gallery : []).filter((g) => typeof g === "string" && g) });
 });
 
 let site = {};
@@ -67,7 +68,8 @@ const runtime = `
 })(${JSON.stringify(data)});
 `;
 
+const gallery = fs.readFileSync(path.join(__dirname, "gallery-src.js"), "utf8");
 fs.writeFileSync(path.join(__dirname, "js", "products.js"),
-  "/* Generado automáticamente por build-products.js. No editar a mano. */" + runtime);
+  "/* Generado automáticamente por build-products.js. No editar a mano. */" + runtime + "\n" + gallery);
 console.log("Servicios:", services.length, "| Categorías:", data.categories.length,
   "| Productos:", categories.reduce((n, c) => n + c.products.length, 0));
