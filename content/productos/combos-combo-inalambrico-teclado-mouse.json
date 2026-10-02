@@ -1,7 +1,12 @@
 {
-  "name": "Combo inalámbrico teclado + mouse",
+  "name": "COMBO TECLADO MOUSE INALAMBRICO BLANCO LUXEMATE Q8000 GENIUS",
   "category": "combos",
-  "price": "$75.000",
+  "price": "$104.000",
   "published": true,
-  "order": 10
+  "order": 10,
+  "image": "/assets/img/productos/luxemate3.webp",
+  "gallery": [
+    "/assets/img/productos/luxemate.webp",
+    "/assets/img/productos/luxemate2.webp"
+  ]
 }
