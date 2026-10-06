@@ -1,0 +1,12 @@
+{
+  "price": "$41.000",
+  "published": true,
+  "order": 100,
+  "name": "TECLADO ALAMBRICO USB NEGRO GENIUS KB-100",
+  "category": "teclados",
+  "image": "/assets/img/productos/teclado-genius-usb-smart-kb-100-negro-con-letra-n-2-.webp",
+  "gallery": [
+    "/assets/img/productos/teclado-genius-usb-smart-kb-100-negro-con-letra-n-1-.webp",
+    "/assets/img/productos/teclado-genius-usb-smart-kb-100-negro-con-letra-n.webp"
+  ]
+}
