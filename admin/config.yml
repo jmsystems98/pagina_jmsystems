@@ -60,7 +60,7 @@ collections:
     create: true
     extension: json
     format: json
-    slug: "{{slug | truncate: 40, true}}"
+    identifier_field: title
     summary: "{{title}} ({{category}})"
     fields:
       - { label: Título, name: title, widget: string }
@@ -84,7 +84,6 @@ collections:
     create: true
     extension: json
     format: json
-    slug: "{{slug}}"
     identifier_field: title
     summary: "{{title}}"
     fields:
@@ -104,7 +103,7 @@ collections:
     create: true
     extension: json
     format: json
-    slug: "{{slug}}"
+    identifier_field: name
     summary: "{{name}} — {{price}}"
     sortable_fields: ["name", "category", "price"]
     fields:
