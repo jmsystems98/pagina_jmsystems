@@ -104,7 +104,7 @@ collections:
     create: true
     extension: json
     format: json
-    slug: "{{fields.category}}-{{slug}}"
+    slug: "{{slug}}"
     summary: "{{name}} — {{price}}"
     sortable_fields: ["name", "category", "price"]
     fields:
