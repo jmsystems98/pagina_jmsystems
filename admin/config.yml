@@ -3,7 +3,7 @@ backend:
   repo: jmsystems98/pagina_jmsystems
   branch: main   # si tu rama se llama "master", cámbialo aquí
 
-publish_mode: editorial_workflow
+#publish_mode: editorial_workflow
 
 locale: es
 site_url: https://jmsystemscolombia.netlify.app
