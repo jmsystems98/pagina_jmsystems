@@ -1,7 +1,11 @@
 {
-  "name": "Combo USB teclado + mouse básico",
+  "name": "COMBO TECLADO MOUSE INALAMBRICO MK270 LOGITECH",
   "category": "combos",
-  "price": "$58.000",
+  "price": "$128.000",
   "published": true,
-  "order": 20
+  "order": 20,
+  "image": "/assets/img/productos/combo-teclado-mk270-1-1-.webp",
+  "gallery": [
+    "/assets/img/productos/combo-teclado-mk270.webp"
+  ]
 }
