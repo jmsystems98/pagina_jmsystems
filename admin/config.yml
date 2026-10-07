@@ -2,10 +2,20 @@ backend:
   name: github
   repo: jmsystems98/pagina_jmsystems
   branch: main   # si tu rama se llama "master", cámbialo aquí
+  commit_messages:
+    create: 'Crear {{collection}} "{{slug}}" [skip ci]'
+    update: 'Actualizar {{collection}} "{{slug}}" [skip ci]'
+    delete: 'Eliminar {{collection}} "{{slug}}" [skip ci]'
+    uploadMedia: 'Subir imagen "{{path}}" [skip ci]'
+    deleteMedia: 'Borrar imagen "{{path}}" [skip ci]'
 
 #publish_mode: editorial_workflow
 
 locale: es
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: "-"
 site_url: https://jmsystemscolombia.netlify.app
 display_url: https://jmsystemscolombia.netlify.app
 
