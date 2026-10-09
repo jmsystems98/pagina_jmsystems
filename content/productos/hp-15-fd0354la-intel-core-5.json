@@ -1,0 +1,13 @@
+{
+  "price": "$ 2.400.000",
+  "published": true,
+  "order": 100,
+  "note": "Disfruta de un excelente rendimiento para trabajar, estudiar y realizar múltiples tareas. Equipado con procesador Intel Core 5 120U, 24 GB de RAM, almacenamiento SSD de 512 GB y pantalla de 15,6\" Full HD, ofrece velocidad, fluidez y una experiencia visual nítida para tu día a día.",
+  "name": "HP 15-FD0354LA – Intel Core 5",
+  "category": "computadores",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791575202/image-0.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791575202/w_1154_h_832_f_webp_fit_contain_q_85.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791575202/image-1.webp"
+  ]
+}
