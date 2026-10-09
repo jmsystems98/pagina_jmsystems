@@ -19,6 +19,17 @@ slug:
 site_url: https://jmsystemscolombia.netlify.app
 display_url: https://jmsystemscolombia.netlify.app
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: kvejioxa
+    api_key: "765241268688575"
+    default_transformations:
+      - - fetch_format: auto
+          width: 700
+          crop: limit
+          quality: auto
+
 media_folder: /assets/img/productos
 public_folder: /assets/img/productos
 
@@ -130,10 +141,12 @@ collections:
       - { label: Imagen principal, name: image, widget: image, required: false, choose_url: false }
       - label: Más imágenes (galería)
         name: gallery
-        widget: list
+        widget: image
         required: false
-        max: 6
-        hint: "Agrega aquí las demás fotos (hasta 6). Con la principal, el cliente verá todas en el catálogo."
-        field: { label: Imagen, name: image, widget: image, choose_url: false }
+        choose_url: false
+        hint: "Pulsa el botón y marca varias fotos a la vez. Con la principal, el cliente verá todas en el catálogo."
+        media_library:
+          config:
+            multiple: true
       - { label: Publicado, name: published, widget: boolean, default: true, hint: "Desactívalo para ocultar el producto (ej: agotado) sin borrarlo" }
       - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero. Déjalo en 100 para que salga al final" }
