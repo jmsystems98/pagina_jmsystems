@@ -1,0 +1,14 @@
+{
+  "price": "$ 2.700.000",
+  "published": true,
+  "order": 100,
+  "name": "HP 240R G10 – Intel Core 5",
+  "category": "computadores",
+  "note": "Potencia, movilidad y productividad para tu día a día. Cuenta con procesador Intel Core 5 120U, 16 GB de RAM, almacenamiento SSD de 512 GB, pantalla de 14\" y Windows 11 Pro. Ideal para profesionales, estudiantes y empresas que buscan rendimiento y eficiencia en un equipo compacto.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574928/52894.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574928/52896.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574928/52897.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574928/52895.webp"
+  ]
+}
