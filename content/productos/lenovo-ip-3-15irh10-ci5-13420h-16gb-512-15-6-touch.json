@@ -1,14 +1,12 @@
 {
-  "price": "$ 2.300.000",
-  "published": true,
-  "order": 100,
-  "name": "LENOVO IP 3 15IRH10 CI5 13420H 16GB/512/15.6 TOUCH",
+  "name": "Lenovo IdeaPad Slim 3 15IRU8 – Intel Core i3",
   "category": "computadores",
-  "note": "Rendimiento y versatilidad para estudiar, trabajar y disfrutar de tus aplicaciones favoritas. Cuenta con procesador Intel Core i5-13420H, 16 GB de RAM, almacenamiento SSD de 512 GB y pantalla táctil de 15,6\", ideal para una experiencia más práctica e interactiva.",
-  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574343/662942-800-auto.webp",
+  "price": "$ 1.600.000",
+  "note": "Ideal para estudiar, trabajar y realizar tus tareas diarias con eficiencia. Equipado con procesador Intel Core i3-1315U, 8 GB de RAM, almacenamiento SSD de 512 GB y pantalla de 15,6\", ofrece un buen equilibrio entre rendimiento, velocidad y practicidad.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574522/portatil-lenovo-ideapad-slim-3-15iru8-core-i3-1315u-8gb-ddr5-512gb-ssd-156-fhd.webp",
   "gallery": [
-    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574344/662946-800-auto.webp",
-    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574344/662944-800-auto.webp",
-    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574343/662943-800-auto.webp"
-  ]
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574523/portatil-lenovo-ideapad-slim-3-15iru8-core-i3-1315u-8gb-ddr5-512gb-ssd-156-fhd_2.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574523/portatil-lenovo-ideapad-slim-3-15iru8-core-i3-1315u-8gb-ddr5-512gb-ssd-156-fhd_1.webp"
+  ],
+  "published": true
 }
