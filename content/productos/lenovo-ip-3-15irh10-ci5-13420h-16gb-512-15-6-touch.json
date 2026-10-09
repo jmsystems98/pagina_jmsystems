@@ -1,0 +1,14 @@
+{
+  "price": "$ 2.300.000",
+  "published": true,
+  "order": 100,
+  "name": "LENOVO IP 3 15IRH10 CI5 13420H 16GB/512/15.6 TOUCH",
+  "category": "computadores",
+  "note": "Rendimiento y versatilidad para estudiar, trabajar y disfrutar de tus aplicaciones favoritas. Cuenta con procesador Intel Core i5-13420H, 16 GB de RAM, almacenamiento SSD de 512 GB y pantalla táctil de 15,6\", ideal para una experiencia más práctica e interactiva.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574343/662942-800-auto.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574344/662946-800-auto.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574344/662944-800-auto.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791574343/662943-800-auto.webp"
+  ]
+}
