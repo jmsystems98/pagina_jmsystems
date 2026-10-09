@@ -1,7 +1,14 @@
 {
-  "price": "Consultar",
+  "price": "$ 2.959.000",
   "published": true,
   "order": 100,
   "name": "LENOVO IP 3 15IRH10 CI7 13620H 24GB/512SSD/15.3\"",
-  "category": "computadores"
+  "category": "computadores",
+  "note": "Potencia y rendimiento para trabajar, estudiar y realizar múltiples tareas. Equipado con procesador Intel Core i7-13620H, 24 GB de RAM, almacenamiento SSD de 512 GB y pantalla de 15,3\", ofrece velocidad, fluidez y espacio para tus proyectos y aplicaciones.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791573996/D_NQ_NP_2X_858754-MLA99510047754_112025-F.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791573996/D_NQ_NP_2X_828433-MLA92956992310_092025-F.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791573996/D_NQ_NP_2X_680235-MLA93371179153_092025-F.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791573996/D_NQ_NP_2X_822512-MLA92957012146_092025-F.webp"
+  ]
 }
