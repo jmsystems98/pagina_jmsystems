@@ -1,0 +1,12 @@
+{
+  "price": "$ 34.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Logitech M90 – Alámbrico USB Gris",
+  "category": "mouse",
+  "note": "Sencillo, práctico y confiable para tus actividades diarias. El Logitech M90 cuenta con conexión USB alámbrica y diseño ambidiestro que permite utilizarlo cómodamente con ambas manos. Ideal para trabajar, estudiar y navegar por internet, ofreciendo un control preciso y una instalación fácil, sin necesidad de configuraciones complicadas.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841101/D_NQ_NP_2X_742125-MLA99894749067_112025-F.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841101/D_NQ_NP_2X_987569-MLA45375926728_032021-F.webp"
+  ]
+}
