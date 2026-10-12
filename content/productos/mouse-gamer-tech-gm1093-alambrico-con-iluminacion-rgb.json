@@ -1,0 +1,13 @@
+{
+  "price": "$ 49.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Gamer Tech GM1093 – Alámbrico con Iluminación RGB",
+  "category": "mouse",
+  "note": "Dale estilo y precisión a tus partidas con el mouse Gamer Tech GM1093. Su conexión alámbrica ofrece una respuesta estable, mientras que su iluminación RGB aporta un toque gamer a tu espacio. Ideal para disfrutar de tus videojuegos favoritos y realizar tus tareas diarias con comodidad.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791840748/32568667-800-auto.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791840748/32568666-800-auto.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791840748/32568664-800-auto.webp"
+  ]
+}
