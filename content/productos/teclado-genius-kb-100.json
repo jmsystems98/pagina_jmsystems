@@ -2,11 +2,12 @@
   "price": "$41.000",
   "published": true,
   "order": 100,
-  "name": "TECLADO ALAMBRICO USB NEGRO GENIUS KB-100",
+  "name": "Teclado Genius KB-100 – USB Negro",
   "category": "teclados",
   "image": "/assets/img/productos/teclado-genius-usb-smart-kb-100-negro-con-letra-n-2-.webp",
   "gallery": [
     "/assets/img/productos/teclado-genius-usb-smart-kb-100-negro-con-letra-n-1-.webp",
     "/assets/img/productos/teclado-genius-usb-smart-kb-100-negro-con-letra-n.webp"
-  ]
+  ],
+  "note": "Practicidad y comodidad para tus tareas diarias. El teclado Genius KB-100 cuenta con conexión USB alámbrica y diseño clásico en color negro, ideal para trabajar, estudiar y realizar actividades de oficina. Una opción funcional y confiable para complementar tu computador en casa o en la empresa."
 }
