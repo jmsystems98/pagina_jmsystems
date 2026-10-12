@@ -2,10 +2,11 @@
   "price": "$58.000",
   "published": true,
   "order": 100,
-  "name": "TECLADO ALAMBRICO USB NEGRO LOGITECH K120",
+  "name": "Teclado Logitech K120 – Alámbrico USB Negro",
   "category": "teclados",
   "image": "/assets/img/productos/w-1200-h-1200-fit-pad.webp",
   "gallery": [
     "/assets/img/productos/w-1200-h-1200-fit-pad-1-.webp"
-  ]
+  ],
+  "note": "Trabaja y estudia con comodidad gracias al teclado Logitech K120. Su diseño resistente, distribución de teclas de tamaño estándar y conexión USB permiten una escritura cómoda y sencilla para tus actividades diarias. Ideal para el hogar, la oficina o cualquier espacio de trabajo."
 }
