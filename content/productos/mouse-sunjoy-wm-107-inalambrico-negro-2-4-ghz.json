@@ -1,0 +1,13 @@
+{
+  "price": "$ 40.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Sunjoy WM-107 – Inalámbrico Negro 2.4 GHz",
+  "category": "mouse",
+  "note": "Trabaja y estudia con mayor comodidad gracias al mouse inalámbrico Sunjoy WM-107. Su conexión de 2.4 GHz permite disfrutar de libertad de movimiento sin cables, mientras que su diseño compacto en color negro combina fácilmente con cualquier espacio de trabajo. Ideal para el hogar, la oficina o el estudio.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841791/mouse-inalambrico-dual-wiwu-wm107-recargable-bluetooth-y-usb-negro.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841793/mouse-inalambrico-dual-wiwu-wm107-recargable-bluetooth-y-usb-negro_2.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841792/mouse-inalambrico-dual-wiwu-wm107-recargable-bluetooth-y-usb-negro_1.webp"
+  ]
+}
