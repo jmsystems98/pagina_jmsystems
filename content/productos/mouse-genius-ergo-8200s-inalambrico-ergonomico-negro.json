@@ -1,0 +1,13 @@
+{
+  "price": "$ 67.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Genius Ergo 8200S – Inalámbrico Ergonómico Negro",
+  "category": "mouse",
+  "note": "Disfruta de comodidad y libertad de movimiento con el mouse inalámbrico Genius Ergo 8200S. Su diseño ergonómico está pensado para ofrecer un agarre cómodo durante tus jornadas de trabajo o estudio. Ideal para el hogar y la oficina, ayuda a mantener tu escritorio organizado y libre de cables.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841538/ERGO1.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841540/ERGO3.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841539/ERGO2.webp"
+  ]
+}
