@@ -1,0 +1,13 @@
+{
+  "price": "$ 3.000.000",
+  "published": true,
+  "order": 100,
+  "name": "Dell Pro 15 PV15250 – Intel Core i7",
+  "category": "computadores",
+  "note": "Rendimiento, productividad y confiabilidad para el trabajo y los negocios. Equipado con procesador Intel Core i7-1355U, 16 GB de RAM, almacenamiento SSD de 512 GB, pantalla de 15,6\" y Windows 11 Pro. Ideal para profesionales y empresas que buscan eficiencia y un equipo preparado para sus tareas diarias.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835034/w_1036_h_832_f_webp_fit_contain_q_85.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835034/w_1036_h_832_f_webp_fit_contain_q_85_1.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835034/w_1036_h_832_f_webp_fit_contain_q_85_2.webp"
+  ]
+}
