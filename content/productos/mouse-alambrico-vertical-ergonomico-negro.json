@@ -1,0 +1,13 @@
+{
+  "price": "$ 45.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Alámbrico Vertical Ergonómico – Negro",
+  "category": "mouse",
+  "note": "Disfruta de mayor comodidad y control durante tus jornadas de trabajo. Este mouse vertical ergonómico cuenta con conexión alámbrica y diseño pensado para favorecer una posición más natural de la mano durante su uso. Ideal para trabajar, estudiar y realizar tareas diarias en el hogar o la oficina.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791840605/4085-2.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791840606/4085-3.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791840605/4085-1.webp"
+  ]
+}
