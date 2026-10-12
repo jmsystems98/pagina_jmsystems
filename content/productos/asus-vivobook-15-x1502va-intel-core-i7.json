@@ -1,0 +1,13 @@
+{
+  "price": "$ 2.699.000",
+  "published": true,
+  "order": 100,
+  "name": "ASUS Vivobook 15 X1502VA – Intel Core i7",
+  "category": "computadores",
+  "note": "Potencia y velocidad para llevar tu productividad al siguiente nivel. Equipado con procesador Intel Core i7-13620H, 16 GB de RAM, almacenamiento SSD de 512 GB y pantalla de 15,6\", es ideal para profesionales, estudiantes y usuarios que necesitan un equipo ágil para trabajar, estudiar y ejecutar múltiples aplicaciones.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791837710/6cb68d28-5f4d-4db9-a835-ce1a3f2a2cd7-1___3d0458c16a19c19e7660c620907a7dc9.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791837712/1760732711393.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791837711/1760732715505.webp"
+  ]
+}
