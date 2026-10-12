@@ -1,0 +1,13 @@
+{
+  "price": "$ 25.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Genius DX-101 – Alámbrico USB Negro",
+  "category": "mouse",
+  "note": "Practicidad y precisión para tus tareas diarias. El mouse Genius DX-101 cuenta con conexión USB alámbrica y un diseño cómodo en color negro, ideal para trabajar, estudiar y navegar por internet. Su instalación sencilla permite conectarlo y comenzar a utilizarlo fácilmente en computadores compatibles.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841262/PIC_2025010707_c40c73948.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841263/PIC_2025010708_148928060.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841262/PIC_2025060253_300611932.webp"
+  ]
+}
