@@ -1,0 +1,12 @@
+{
+  "price": "$ 53.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Logitech M170 – Inalámbrico Negro",
+  "category": "mouse",
+  "note": "Disfruta de comodidad y libertad de movimiento con el Logitech M170. Su diseño compacto y conexión inalámbrica de 2,4 GHz permiten trabajar, estudiar y navegar por internet sin cables que estorben. Fácil de utilizar, es ideal para el hogar, la oficina o para llevar contigo a cualquier lugar.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791842021/581411-800-auto.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791842019/D_NQ_NP_2X_703907-MLA84534130448_052025-F.webp"
+  ]
+}
