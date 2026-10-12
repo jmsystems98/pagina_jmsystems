@@ -1,0 +1,13 @@
+{
+  "price": "$ 25.000",
+  "published": true,
+  "order": 100,
+  "name": "Mouse Basik Tech – Inalámbrico Negro",
+  "category": "mouse",
+  "note": "Disfruta de una experiencia práctica y cómoda con el mouse inalámbrico Basik Tech. Su diseño en color negro combina fácilmente con cualquier computador y espacio de trabajo, mientras que su conexión inalámbrica te brinda mayor libertad de movimiento. Ideal para estudiar, trabajar y realizar tus tareas diarias en casa o en la oficina.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841897/2146134-800-auto.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841900/2146137-800-auto.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791841899/2146136-800-auto.webp"
+  ]
+}
