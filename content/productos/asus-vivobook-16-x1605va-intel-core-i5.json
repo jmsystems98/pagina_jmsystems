@@ -1,0 +1,13 @@
+{
+  "price": "$ 2.450.000",
+  "published": true,
+  "order": 100,
+  "name": "ASUS Vivobook 16 X1605VA – Intel Core i5",
+  "note": "Potencia y amplio almacenamiento para trabajar, estudiar y disfrutar de tus proyectos. Equipado con procesador Intel Core i5-13420H, 16 GB de RAM, almacenamiento SSD de 1 TB y pantalla de 16\", ofrece un excelente equilibrio entre rendimiento, velocidad y espacio para tus archivos y aplicaciones.",
+  "category": "computadores",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835739/image-0-asus.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835679/image-2_1.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835679/image-1_1.webp"
+  ]
+}
