@@ -2,11 +2,12 @@
   "price": "$80.000",
   "published": true,
   "order": 100,
-  "name": "COMBO TECLADO Y MOUSE INALAMBRICO TIPO MAC (BLANCO) K06 1571G",
+  "name": "Combo K06 – Teclado y Mouse Inalámbricos Blanco, Estilo Mac",
   "category": "combos",
   "image": "/assets/img/productos/combo-teclado-y-mouse-inalambrico-ultra-delgado-k-06-blanco-3-.webp",
   "gallery": [
     "/assets/img/productos/combo-teclado-y-mouse-inalambrico-ultra-delgado-k-06-blanco-2-.webp",
     "/assets/img/productos/combo-teclado-y-mouse-inalambrico-ultra-delgado-k-06-blanco-1-.webp"
-  ]
+  ],
+  "note": "Dale un toque moderno y elegante a tu escritorio con este combo de teclado y mouse inalámbricos en color blanco, con diseño inspirado en el estilo Mac. Ideal para trabajar, estudiar o disfrutar de tus actividades diarias con mayor comodidad y libertad de movimiento, manteniendo un espacio limpio y organizado."
 }
