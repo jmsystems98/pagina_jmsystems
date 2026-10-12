@@ -1,0 +1,13 @@
+{
+  "price": "$50.000",
+  "published": true,
+  "order": 100,
+  "name": "Base Refrigerante Jaltech N-18 – 1 Cooler Negra",
+  "category": "soportes-proteccion",
+  "note": "Mejora la ventilación de tu portátil con la base refrigerante Jaltech N-18. Su diseño reclinable permite ajustar la inclinación del equipo para una postura más cómoda, mientras que su ventilador ayuda a favorecer la circulación de aire. Su acabado negro ofrece un estilo sencillo y práctico para estudiar, trabajar o disfrutar de tu contenido favorito.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791838542/BASE_REFRIGERANTE_ERGO_BLACK_10598_N18_1.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791838543/BASE_REFRIGERANTE_ERGO_BLACK_10598_N18_2.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791838544/BASE_REFRIGERANTE_ERGO_BLACK_10598_N18_5.webp"
+  ]
+}
