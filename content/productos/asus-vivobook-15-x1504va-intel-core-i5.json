@@ -1,0 +1,14 @@
+{
+  "price": "$ 2.000.000",
+  "published": true,
+  "order": 100,
+  "name": "ASUS Vivobook 15 X1504VA – Intel Core i5",
+  "category": "computadores",
+  "note": "Un equipo versátil para estudiar, trabajar y disfrutar de tus aplicaciones favoritas. Equipado con procesador Intel Core i5-1334U, 12 GB de RAM, almacenamiento SSD de 512 GB y pantalla de 15,6\", ofrece un buen equilibrio entre rendimiento, velocidad y comodidad para tus actividades diarias.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791836142/image-undefined--0.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791836145/image-undefined--5.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791836144/image-undefined--3.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791836143/image-undefined--2.webp"
+  ]
+}
