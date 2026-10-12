@@ -1,0 +1,14 @@
+{
+  "price": "$ 2.400.000",
+  "published": true,
+  "order": 100,
+  "name": "ASUS Vivobook 15 X1504VA – Intel Core 5 Touch",
+  "category": "computadores",
+  "note": "Productividad, rendimiento y comodidad en un solo equipo. Cuenta con procesador Intel Core 5 120U, 16 GB de RAM, almacenamiento SSD de 512 GB y pantalla táctil de 15,6\" Full HD, ideal para trabajar, estudiar y realizar múltiples tareas con fluidez y disfrutar de una experiencia más interactiva.",
+  "image": "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835952/asus2.webp",
+  "gallery": [
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835953/asus4.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835952/asus3.webp",
+    "https://res.cloudinary.com/kvejioxa/image/upload/c_limit,f_auto,q_auto,w_700/v1791835951/asus1.webp"
+  ]
+}
