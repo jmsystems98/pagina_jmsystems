@@ -30,10 +30,10 @@
       var m = (location.hash || "").match(/^#\/catalogo\/([a-z0-9-]+)/i);
       url = base() + "#/catalogo/" + (m ? m[1] : "") + "/" + slug(name);
       var pr = card.querySelector(".product-price:not(.consult)");
-      text = "Mira este producto de JMSystems: " + name + (pr ? " (" + pr.textContent.trim() + ")" : "");
+      text = "Mira este producto de JMSYSTEMS: " + name + (pr ? " (" + pr.textContent.trim() + ")" : "");
     } else {
       url = base() + "#/servicio/" + slug(name);
-      text = "Mira este servicio de JMSystems: " + name;
+      text = "Mira este servicio de JMSYSTEMS: " + name;
     }
     return { url: url, text: text, title: name };
   }
@@ -61,7 +61,7 @@
     [
       ["WhatsApp", "https://wa.me/?text=" + enc(full)],
       ["Facebook", "https://www.facebook.com/sharer/sharer.php?u=" + enc(d.url)],
-      ["Correo", "mailto:?subject=" + enc(d.title + " - JMSystems") + "&body=" + enc(full)]
+      ["Correo", "mailto:?subject=" + enc(d.title + " - JMSYSTEMS") + "&body=" + enc(full)]
     ].forEach(function (it) {
       var a = document.createElement("a");
       a.href = it[1]; a.textContent = it[0];

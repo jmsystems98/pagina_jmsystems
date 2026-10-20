@@ -104,7 +104,7 @@
     const list = SITE_DATA.services.filter((s) => filter === "Todos" || s.category === filter);
     wrap.innerHTML = list
       .map((s) => {
-        const msg = `Hola JMSystems, quiero cotizar: ${s.title}`;
+        const msg = `Hola JMSYSTEMS, quiero cotizar: ${s.title}`;
         return `
         <article class="service-card reveal">
           ${refMedia(s, s.tag)}
@@ -165,7 +165,7 @@
 
     document.getElementById("products-grid").innerHTML = cat.products
       .map((p) => {
-        const msg = `Hola JMSystems, quiero cotizar: ${p.name}${p.price && p.price !== "Consultar" ? " (" + p.price + ")" : ""}`;
+        const msg = `Hola JMSYSTEMS, quiero cotizar: ${p.name}${p.price && p.price !== "Consultar" ? " (" + p.price + ")" : ""}`;
         const priceHtml =
           p.price === "Consultar"
             ? `<span class="product-price consult">Precio a consultar</span>`
@@ -218,7 +218,7 @@
   function renderContact() {
     const c = SITE_DATA.contact;
     document.getElementById("contact-methods").innerHTML = `
-      <a class="contact-method" href="${waLink('Hola JMSystems, quiero más información.')}" target="_blank" rel="noopener">
+      <a class="contact-method" href="${waLink('Hola JMSYSTEMS, quiero más información.')}" target="_blank" rel="noopener">
         <span class="ic">${icon("whatsapp")}</span>
         <span><span class="label">WHATSAPP</span><br><span class="value">${c.whatsappDisplay}</span></span>
       </a>
@@ -239,7 +239,7 @@
     document.querySelectorAll("[data-coverage]").forEach((el) => (el.textContent = c.coverage));
     document.querySelectorAll("[data-city]").forEach((el) => (el.textContent = c.city));
     document.querySelectorAll("[data-wa-link]").forEach((el) => {
-      el.href = waLink(el.dataset.waLink || "Hola JMSystems, quiero más información.");
+      el.href = waLink(el.dataset.waLink || "Hola JMSYSTEMS, quiero más información.");
     });
     document.querySelectorAll("[data-wa-display]").forEach((el) => (el.textContent = c.whatsappDisplay));
     document.querySelectorAll("[data-instagram-link]").forEach((el) => (el.href = c.instagram));

@@ -1,4 +1,4 @@
-# Sitio web de JMSystems
+# Sitio web de JMSYSTEMS
 
 Sitio 100% estático (HTML + CSS + JavaScript), listo para publicar gratis.
 No necesita servidor, base de datos ni pagos.
@@ -212,7 +212,7 @@ Ambas son 100% gratis, con HTTPS automático, sin tarjeta de crédito.
 ## 🔎 Para que te encuentren en Google
 
 1. **Google Business Profile** (gratis): [business.google.com](https://business.google.com).
-   Agrega "JMSystems", categoría "Servicio de reparación de computadoras",
+   Agrega "JMSYSTEMS", categoría "Servicio de reparación de computadoras",
    zona Medellín / Valle de Aburrá / Oriente antioqueño, y el link del sitio.
 2. **Google Search Console**: [search.google.com/search-console](https://search.google.com/search-console),
    agrega la URL de tu sitio para que Google lo indexe más rápido.
