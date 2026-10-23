@@ -80,3 +80,137 @@ fs.writeFileSync(path.join(__dirname, "js", "products.js"),
   "/* Generado automáticamente por build-products.js. No editar a mano. */" + runtime + "\n" + gallery);
 console.log("Servicios:", services.length, "| Categorías:", data.categories.length,
   "| Productos:", categories.reduce((n, c) => n + c.products.length, 0));
+
+// ================== PÁGINAS REALES POR CATEGORÍA + SITEMAP (SEO) ==================
+(function () {
+  const SITE_URL = "https://jmsystemscolombia.netlify.app";
+  const GA_ID = "G-P2WEY2T43B";
+  const c = Object.assign(
+    { whatsapp: "573105996075", whatsappDisplay: "+57 310 599 6075", city: "Medellín, Antioquia" },
+    site.contact || {}
+  );
+  const esc = (s) => String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const url = (u) => (/^https?:/i.test(u) ? u : "/" + String(u || "").replace(/^\/+/, ""));
+  const full = (u) => (u ? (/^https?:/i.test(u) ? u : SITE_URL + url(u)) : "");
+  const wa = (m) => "https://wa.me/" + c.whatsapp + "?text=" + encodeURIComponent(m);
+  const priceNum = (p) => { const n = parseInt(String(p || "").replace(/[^\d]/g, ""), 10); return n > 0 ? n : null; };
+  const ld = (o) => '<script type="application/ld+json">' + JSON.stringify(o).replace(/</g, "\\u003c") + "</script>";
+  const city = String(c.city).split(",")[0];
+  const logo = url(site.logo || "assets/img/logo.png");
+
+  function page(cat) {
+    const pageUrl = SITE_URL + "/catalogo/" + cat.id + "/";
+    const title = cat.title + " en " + city + " | JMSYSTEMS";
+    const desc = cat.title + (cat.subtitle ? " – " + cat.subtitle.toLowerCase() : "") +
+      ". Precios de referencia y cotización directa por WhatsApp en " + c.city + ". Envíos a toda Colombia.";
+    const img = full(cat.image || (cat.products[0] && cat.products[0].image) || site.logo || "assets/img/logo.png");
+
+    const cards = cat.products.map((p) => {
+      const msg = "Hola JMSYSTEMS, quiero cotizar: " + p.name + (priceNum(p.price) ? " (" + p.price + ")" : "");
+      const price = priceNum(p.price)
+        ? '<span class="product-price">' + esc(p.price) + "</span>"
+        : '<span class="product-price consult">Precio a consultar</span>';
+      const media = p.image
+        ? '<div class="ref-media"><img src="' + esc(url(p.image)) + '" alt="' + esc(p.name) + '" loading="lazy"></div>' : "";
+      const note = p.note ? '<span class="product-note">' + esc(p.note) + "</span>" : "";
+      return '<article class="product-card">' + media + '<div class="product-body"><h4>' + esc(p.name) + "</h4>" + note +
+        '<div class="product-price-row">' + price +
+        '<a class="product-wa-btn" href="' + esc(wa(msg)) + '" target="_blank" rel="noopener">Cotizar</a></div></div></article>';
+    }).join("\n");
+
+    const others = data.categories.filter((o) => o.id !== cat.id)
+      .map((o) => '<a href="/catalogo/' + o.id + '/">' + esc(o.title) + "</a>").join("");
+
+    const breadcrumb = {
+      "@context": "https://schema.org", "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Inicio", item: SITE_URL + "/" },
+        { "@type": "ListItem", position: 2, name: cat.title, item: pageUrl }
+      ]
+    };
+    const list = {
+      "@context": "https://schema.org", "@type": "ItemList", name: cat.title,
+      itemListElement: cat.products.map((p, i) => ({
+        "@type": "ListItem", position: i + 1,
+        item: Object.assign(
+          { "@type": "Product", name: p.name, image: full(p.image) || undefined, description: p.note || undefined },
+          priceNum(p.price)
+            ? { offers: { "@type": "Offer", priceCurrency: "COP", price: String(priceNum(p.price)),
+                availability: "https://schema.org/InStock", url: pageUrl } }
+            : {}
+        )
+      }))
+    };
+
+    return `<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(desc)}">
+<link rel="canonical" href="${pageUrl}">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+<meta property="og:url" content="${pageUrl}">
+<meta property="og:image" content="${esc(img)}">
+<meta property="og:locale" content="es_CO">
+<link rel="icon" href="${esc(logo)}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/style.css">
+${ld(breadcrumb)}
+${ld(list)}
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA_ID}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');</script>
+</head>
+<body>
+<header class="nav"><div class="container">
+<a href="/" class="brand"><img src="${esc(logo)}" alt="Logo JMSYSTEMS"></a>
+<div class="nav-links"><a href="/#servicios">Servicios</a><a href="/#catalogo">Catálogo</a><a href="/#nosotros">Nosotros</a><a href="/#contacto">Contacto</a></div>
+<a class="nav-cta" href="${esc(wa("Hola JMSYSTEMS, quiero más información."))}" target="_blank" rel="noopener">Escríbenos</a>
+</div></header>
+<main id="top">
+<section class="section"><div class="container">
+<div class="catalog-breadcrumb"><a href="/#catalogo">← Catálogo</a> <span class="sep">/</span> <span>${esc(cat.title)}</span></div>
+<div class="section-head">
+<span class="eyebrow">${esc(cat.subtitle || "Catálogo")}</span>
+<h1>${esc(cat.title)} en ${esc(city)}</h1>
+<p>Elige la referencia que te interesa y escríbenos por WhatsApp para confirmar disponibilidad. Envíos a toda Colombia.</p>
+</div>
+<div class="products-grid">
+${cards}
+</div>
+<div class="section-head" style="margin-top:48px"><h2>Otras categorías</h2></div>
+<p style="display:flex;flex-wrap:wrap;gap:10px 22px">${others}</p>
+<div class="catalog-note"><span>Los precios mostrados son de referencia y pueden variar según disponibilidad. Escríbenos por WhatsApp para confirmar el precio final y el tiempo de entrega.</span></div>
+</div></section>
+</main>
+<footer><div class="container"><div class="footer-bottom">
+<span>© ${new Date().getFullYear()} JMSYSTEMS. Todos los derechos reservados.</span>
+<span>${esc(c.whatsappDisplay)} · ${esc(c.city)}</span>
+</div></div></footer>
+<script src="/js/tracking.js"></script>
+</body>
+</html>
+`;
+  }
+
+  data.categories.forEach((cat) => {
+    const dir = path.join(__dirname, "catalogo", cat.id);
+    fs.mkdirSync(dir, { recursive: true });
+    fs.writeFileSync(path.join(dir, "index.html"), page(cat));
+  });
+
+  const today = new Date().toISOString().slice(0, 10);
+  const urls = [SITE_URL + "/"].concat(data.categories.map((k) => SITE_URL + "/catalogo/" + k.id + "/"));
+  fs.writeFileSync(
+    path.join(__dirname, "sitemap.xml"),
+    '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+      urls.map((u, i) => "  <url><loc>" + u + "</loc><lastmod>" + today + "</lastmod><priority>" + (i ? "0.8" : "1.0") + "</priority></url>").join("\n") +
+      "\n</urlset>\n"
+  );
+  console.log("Páginas de categoría:", data.categories.length);
+})();
