@@ -40,13 +40,20 @@ readDir("productos").sort(byOrder).forEach((p) => {
     gallery: (Array.isArray(p.gallery) ? p.gallery : []).filter((g) => typeof g === "string" && g) });
 });
 
+const banners = readDir("banners").sort(byOrder).map((b) => ({
+  id: b.__id, title: b.title, text: b.text || "", image: b.image || "", imageMobile: b.image_mobile || "",
+  cta: b.cta || "Cotizar por WhatsApp", product: b.product || "", service: b.service || "",
+  link: b.link || "", start: b.start || "", end: b.end || ""
+}));
+
 let site = {};
 try { site = JSON.parse(fs.readFileSync(path.join(__dirname, "content", "sitio.json"), "utf8")); } catch (e) {}
 
-const data = { services, categories: categories.filter((c) => c.products.length), site };
+const data = { services, categories: categories.filter((c) => c.products.length), site, banners };
 
 const runtime = `
 (function (C) {
+  SITE_DATA.banners = C.banners || [];
   if (C.services.length) SITE_DATA.services = C.services;
   if (C.categories.length) SITE_DATA.productCategories = C.categories;
   var s = C.site || {}, h = s.hero || {};

@@ -71,6 +71,70 @@ collections:
               - { label: Usuario de Instagram, name: instagramHandle, widget: string }
               - { label: Correo (opcional), name: email, widget: string, required: false }
 
+  # ---------------- BANNERS Y PROMOCIONES ----------------
+  - name: banners
+    label: Banners y promociones
+    label_singular: Banner
+    folder: content/banners
+    media_folder: /assets/img/banners
+    public_folder: /assets/img/banners
+    create: true
+    extension: json
+    format: json
+    identifier_field: title
+    summary: "{{title}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Texto corto, name: text, widget: text, required: false }
+      - label: Imagen (computador)
+        name: image
+        widget: image
+        choose_url: false
+        hint: "1600 x 640 px. Se entrega a 1600 px de ancho"
+        media_library:
+          config:
+            default_transformations:
+              - - fetch_format: auto
+                  width: 1600
+                  crop: limit
+                  quality: auto
+      - label: Imagen para celular (opcional)
+        name: image_mobile
+        widget: image
+        required: false
+        choose_url: false
+        hint: "800 x 600 px. Se entrega a 800 px de ancho"
+        media_library:
+          config:
+            default_transformations:
+              - - fetch_format: auto
+                  width: 800
+                  crop: limit
+                  quality: auto
+      - { label: Texto del botón de WhatsApp, name: cta, widget: string, default: "Cotizar por WhatsApp" }
+      - label: Producto de esta promoción (opcional)
+        name: product
+        widget: relation
+        collection: productos
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
+        required: false
+        hint: "Si eliges uno, aparece el botón Ver detalles y el mensaje de WhatsApp lo incluye"
+      - label: Servicio de esta promoción (opcional)
+        name: service
+        widget: relation
+        collection: servicios
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
+        required: false
+      - { label: Enlace propio para Ver detalles (opcional), name: link, widget: string, required: false, hint: "Solo si no eliges producto ni servicio. Ej: #catalogo" }
+      - { label: Mostrar desde, name: start, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+      - { label: Mostrar hasta (inclusive), name: end, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
+      - { label: Publicado, name: published, widget: boolean, default: true }
+      - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero" }
+  
   # ---------------- SERVICIOS ----------------
   - name: servicios
     label: Servicios

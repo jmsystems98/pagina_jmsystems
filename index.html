@@ -46,6 +46,16 @@
   ]
 }
 </script>
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P2WEY2T43B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-P2WEY2T43B');
+</script>
+
 </head>
 <body>
 
@@ -139,6 +149,13 @@
       <span class="strip-item"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12l5.5 5.5L20 6.5" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>Hogares y empresas</span>
     </div>
   </div>
+
+  <!-- PROMOCIONES -->
+  <section class="promos" id="promos" hidden>
+    <div class="container">
+      <div class="promo-carousel" id="promo-carousel" aria-label="Promociones"></div>
+    </div>
+  </section>
 
   <!-- SERVICIOS -->
   <section class="section" id="servicios" data-spine-section>
@@ -300,5 +317,7 @@
 <script src="js/products.js"></script>
 <script src="js/main.js"></script>
 <script src="js/share.js"></script>
+<script src="js/promos.js"></script>
+<script src="js/tracking.js"></script>
 </body>
 </html>
