@@ -214,3 +214,17 @@ ${cards}
   );
   console.log("Páginas de categoría:", data.categories.length);
 })();
+
+// ===== Enlaces a las categorías en el pie de página (rastreables por Google) =====
+(function () {
+  const file = path.join(__dirname, "index.html");
+  let html = fs.readFileSync(file, "utf8");
+  const re = /<!-- CATEGORIAS-INICIO -->[\s\S]*?<!-- CATEGORIAS-FIN -->/;
+  if (!re.test(html)) { console.warn("No se encontraron las marcas CATEGORIAS en index.html"); return; }
+  const links = data.categories
+    .map((k) => '            <li><a href="/catalogo/' + k.id + '/">' + k.title.replace(/&/g, "&amp;").replace(/</g, "&lt;") + "</a></li>")
+    .join("\n");
+  html = html.replace(re, () => "<!-- CATEGORIAS-INICIO -->\n" + links + "\n            <!-- CATEGORIAS-FIN -->");
+  fs.writeFileSync(file, html);
+  console.log("Enlaces de categorías en el pie:", data.categories.length);
+})();
