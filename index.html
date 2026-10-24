@@ -41,6 +41,12 @@
     "addressCountry": "CO"
   },
   "telephone": "+573105996075",
+  "openingHoursSpecification": [{
+  "@type": "OpeningHoursSpecification",
+  "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+  "opens": "08:00",
+  "closes": "17:00"
+  }],
   "sameAs": [
     "https://www.facebook.com/share/18ufyz7g6R/",
     "https://instagram.com/jmsystems1998"
@@ -158,6 +164,18 @@
     </div>
   </section>
 
+    <!-- DESTACADOS -->
+  <section class="section" id="destacados" hidden style="padding-bottom:0">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Selección del mes</span>
+        <h2>Productos destacados</h2>
+        <p>Lo más buscado y las mejores ofertas del momento.</p>
+      </div>
+      <div class="products-grid" id="featured-grid"></div>
+    </div>
+  </section>
+
   <!-- SERVICIOS -->
   <section class="section" id="servicios" data-spine-section>
     <div class="container">
@@ -227,6 +245,60 @@
     </div>
   </section>
 
+    <!-- COTIZADOR RÁPIDO -->
+  <section class="section" id="cotizar">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Cotiza en un minuto</span>
+        <h2>Cuéntanos qué necesitas</h2>
+        <p>Llena el formulario y te llega todo armado a nuestro WhatsApp.</p>
+      </div>
+      <form class="quote-form" id="quote-form">
+        <div class="qf-row">
+          <label>¿Qué necesitas?
+            <select id="qf-type">
+              <option value="servicio">Un servicio técnico</option>
+              <option value="producto">Comprar un producto</option>
+            </select>
+          </label>
+          <label>Elige una opción
+            <select id="qf-item"></select>
+          </label>
+        </div>
+        <div class="qf-row">
+          <label>Tu zona
+            <select id="qf-zone">
+              <option>Medellín</option>
+              <option>Valle de Aburrá</option>
+              <option>Oriente antioqueño</option>
+              <option>Otra zona de Colombia</option>
+            </select>
+          </label>
+          <label>Tu nombre
+            <input id="qf-name" type="text" autocomplete="name">
+          </label>
+        </div>
+        <label>Cuéntanos qué pasa o qué buscas
+          <textarea id="qf-msg" rows="4"></textarea>
+        </label>
+        <p class="qf-note" id="qf-note" hidden></p>
+        <button class="btn btn-wa" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- PREGUNTAS FRECUENTES -->
+  <section class="section" id="preguntas">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Resolvemos tus dudas</span>
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <!-- FAQ-INICIO -->
+      <!-- FAQ-FIN -->
+    </div>
+  </section>
+
   <!-- CTA BAND -->
   <div class="cta-band">
     <div class="container">
@@ -289,6 +361,7 @@
           <h4>Explorar</h4>
           <ul>
             <li><a href="#servicios">Servicios</a></li>
+            <li><a href="/servicios/">Todos los servicios</a></li>
             <li><a href="#catalogo">Catálogo</a></li>
             <li><a href="#nosotros">Nosotros</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -327,6 +400,7 @@
 <script src="js/main.js"></script>
 <script src="js/share.js"></script>
 <script src="js/promos.js"></script>
+<script src="js/extras.js"></script>
 <script src="js/tracking.js"></script>
 </body>
 </html>

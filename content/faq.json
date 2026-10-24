@@ -1,0 +1,36 @@
+{
+  "items": [
+    {
+      "question": "¿Cuánto cuesta y cuánto tarda un mantenimiento?",
+      "answer": "Un mantenimiento tarda aproximadamente 1 hora, aunque depende del estado del equipo y de si hay que cambiar piezas. Los mantenimientos parten desde $80.000. Escríbenos por WhatsApp y te damos el valor exacto."
+    },
+    {
+      "question": "¿Dan garantía en las reparaciones y en los productos?",
+      "answer": "Sí. Las reparaciones tienen 15 días de garantía. En los productos la garantía varía según cada uno, pero es de 3 meses en adelante. Te confirmamos el tiempo exacto al cotizar."
+    },
+    {
+      "question": "¿Atienden a domicilio en Medellín y el Valle de Aburrá?",
+      "answer": "Sí, vamos a tu casa u oficina en Medellín y el Valle de Aburrá, de lunes a viernes de 8:00 a. m. a 5:00 p. m. Si es solo para cotizar, el desplazamiento tiene un costo de $20.000. Si decides hacer el trabajo con nosotros, no lo cobramos."
+    },
+    {
+      "question": "¿Atienden en el Oriente antioqueño?",
+      "answer": "Sí, con servicio agendado. Si es un trabajo confirmado, vamos hasta el lugar y no cobramos el desplazamiento. Si la visita es solo para cotizar un servicio, tiene una tarifa de $50.000."
+    },
+    {
+      "question": "¿Qué formas de pago aceptan?",
+      "answer": "Aceptamos transferencia y efectivo."
+    },
+    {
+      "question": "¿Cuál es el horario de atención?",
+      "answer": "Atendemos de lunes a viernes, de 8:00 a. m. a 5:00 p. m. Puedes escribirnos por WhatsApp y te respondemos lo más rápido posible."
+    },
+    {
+      "question": "¿Hacen soporte técnico remoto?",
+      "answer": "Sí. Te ayudamos por videollamada o acceso remoto, sin que tengas que moverte de tu sitio."
+    },
+    {
+      "question": "¿Hacen envíos de productos?",
+      "answer": "Sí, enviamos accesorios a toda Colombia. Escríbenos para confirmar disponibilidad y tiempo de entrega."
+    }
+  ]
+}

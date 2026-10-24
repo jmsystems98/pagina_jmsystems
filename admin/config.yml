@@ -134,7 +134,24 @@ collections:
       - { label: Mostrar hasta (inclusive), name: end, widget: datetime, date_format: "YYYY-MM-DD", time_format: false, format: "YYYY-MM-DD", required: false }
       - { label: Publicado, name: published, widget: boolean, default: true }
       - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero" }
-  
+
+  # ---------------- PREGUNTAS FRECUENTES ----------------
+  - name: faq
+    label: Preguntas frecuentes
+    files:
+      - label: Preguntas frecuentes
+        name: faq
+        file: content/faq.json
+        format: json
+        fields:
+          - label: Preguntas
+            name: items
+            widget: list
+            summary: "{{fields.question}}"
+            fields:
+              - { label: Pregunta, name: question, widget: string }
+              - { label: Respuesta, name: answer, widget: text }
+                
   # ---------------- SERVICIOS ----------------
   - name: servicios
     label: Servicios
@@ -212,5 +229,13 @@ collections:
         media_library:
           config:
             multiple: true
+      - label: Etiqueta
+        name: badge
+        widget: select
+        required: false
+        options: ["Oferta", "Nuevo", "Últimas unidades"]
+        hint: "Aparece sobre la foto del producto. Déjala vacía si no aplica"
+      - { label: Precio anterior (tachado), name: oldPrice, widget: string, required: false, hint: 'Solo si hay oferta. Ej: "$50.000"' }
+      - { label: Mostrar en Productos destacados, name: featured, widget: boolean, default: false, hint: "Máximo 8 se muestran en la portada" }      
       - { label: Publicado, name: published, widget: boolean, default: true, hint: "Desactívalo para ocultar el producto (ej: agotado) sin borrarlo" }
       - { label: Orden, name: order, widget: number, default: 100, value_type: int, required: false, hint: "Menor número = aparece primero. Déjalo en 100 para que salga al final" }

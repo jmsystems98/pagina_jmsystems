@@ -439,3 +439,28 @@ footer{ padding: 56px 0 32px; background: var(--panel); border-top:1px solid var
 .reveal.in{ opacity:1; transform:none; }
 
 [hidden]{ display:none !important; }
+
+/* ============================================================
+   PÁGINAS GENERADAS: categorías (/catalogo/...) y servicios (/servicios/...)
+   ============================================================ */
+.section-head h1{ font-size: clamp(28px, 3.6vw, 42px); line-height:1.12; margin-top:14px; }
+.catalog-breadcrumb a{ display:inline-flex; align-items:center; color: var(--blue); font-weight:600; }
+.catalog-breadcrumb a:hover{ color: var(--blue-deep); }
+
+.section > .container > h2{ font-size:22px; margin:40px 0 16px; }
+.section > .container > ul{ display:flex; flex-direction:column; gap:12px; color: var(--text-dim); font-size:15.5px; }
+.section > .container > ul li{ position:relative; padding-left:18px; }
+.section > .container > ul li::before{
+  content:""; position:absolute; left:0; top:.7em;
+  width:7px; height:7px; border-radius:50%; background: var(--cyan);
+}
+.section > .container > ul a,
+.section > .container > p a:not(.btn){ color: var(--blue); font-weight:600; }
+.section > .container > ul a:hover,
+.section > .container > p a:not(.btn):hover{ color: var(--cyan-soft); text-decoration: underline; }
+
+/* Menú mínimo en celular para las páginas generadas (no afecta a la portada) */
+@media (max-width: 899px){
+  .nav .container:not(:has(.nav-toggle)) .nav-links{ display:flex; gap:18px; }
+  .nav .container:not(:has(.nav-toggle)) .nav-links a:nth-child(n+3){ display:none; }
+}
